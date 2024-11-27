@@ -4,15 +4,24 @@ using UnityEngine;
 
 public class GroundFallController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	
+	private Rigidbody rb;
+	
+	// Start is called before the first frame update
+	void Start()
+	{
+		rb = GetComponent<Rigidbody>();
+	}
+	
+	public IEnumerator SetRigidBodyvalue()
+	
+	{
+		yield return new WaitForSeconds(0.8f);
+		rb.isKinematic = false;
+		rb.useGravity = true;
+		
+	}
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+	
 }

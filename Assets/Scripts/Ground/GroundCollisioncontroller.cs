@@ -1,14 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
-public class GroundCollisioncontroller : MonoBehaviour
+public class GroundCollisionController : MonoBehaviour
 {
-    private void OnCollisionExit(collision other)
-    {
-    	if(other.gameObject.Camparetag("Ball"))
-        {
-        	
+    private void OnCollisionExit(Collision other){
+        if (other.gameObject.CompareTag("Ball")){
+            
         }
     }
 }
