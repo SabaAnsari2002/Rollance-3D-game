@@ -12,10 +12,14 @@ GameObject:
   - component: {fileID: 8882144240098266083}
   - component: {fileID: 8882144240098266082}
   - component: {fileID: 8882144240098266085}
+  - component: {fileID: -304291789396410478}
+  - component: {fileID: 2397902275911331897}
+  - component: {fileID: 7749475288361009794}
+  - component: {fileID: 6821706341300131418}
   - component: {fileID: 8882144240098266084}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33,7 +37,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &8882144240098266083
 MeshFilter:
@@ -98,6 +102,57 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-304291789396410478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882144240098266087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c213f76f2ad67904fa087ac23b0778b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2397902275911331897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882144240098266087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b23084a47d42d649a75146ad2276531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundFallController: {fileID: -304291789396410478}
+--- !u!114 &7749475288361009794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882144240098266087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 850d6f8f886138d42988781a69969d4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundDataTransmiter: {fileID: 2397902275911331897}
+--- !u!114 &6821706341300131418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8882144240098266087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab02f738656ff4a448522c8a5b19e6e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  endYValue: -7
 --- !u!54 &8882144240098266084
 Rigidbody:
   m_ObjectHideFlags: 0
