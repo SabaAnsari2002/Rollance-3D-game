@@ -534,7 +534,7 @@ GameObject:
   - component: {fileID: 1643649239}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: ball
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -733,6 +733,10 @@ PrefabInstance:
     - target: {fileID: 8882144240098266087, guid: cfcbeb13b7c0a964dab24c84c95c25cf, type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 8882144240098266087, guid: cfcbeb13b7c0a964dab24c84c95c25cf, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
